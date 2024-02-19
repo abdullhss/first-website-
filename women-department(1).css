@@ -1,0 +1,415 @@
+:root {
+    --color: rgb(181, 111, 247);
+    --bgcolor: rgb(0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(250, 50, 250);
+}
+
+header {
+    height: 80px;
+    width: 100%;
+
+
+}
+
+header::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: .1px;
+    background-color: var(--color);
+    left: 0;
+    position: absolute;
+}
+
+
+header nav {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--bgcolor);
+
+}
+
+.logo img {
+    cursor: pointer;
+    width: 80px;
+    max-height: 80px;
+
+}
+
+
+
+.Link {
+    padding: 15px 0;
+
+}
+
+.Link li,
+.log li {
+
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.Link li a {
+    padding: 20px 0;
+    transition: 0.4s;
+
+}
+
+.Link li a:hover {
+    color: var(--color);
+
+}
+
+
+.log li a {
+    text-decoration: none;
+    border: 1px solid var(--color);
+
+    background-color: var(--color);
+    padding: 5px 20px;
+    border-radius: 40px;
+}
+
+.log li a:hover {
+    background-color: transparent;
+    border: 1px solid var(--color);
+    transition: .5s;
+
+}
+
+.Link li a:hover {
+    color: var(--color);
+
+}
+
+
+.log li a {
+    text-decoration: none;
+    border: 1px solid var(--color);
+
+    background-color: var(--color);
+    padding: 5px 20px;
+    border-radius: 40px;
+}
+
+.log li a:hover {
+    background-color: transparent;
+    border: 1px solid var(--color);
+    transition: .5s;
+}
+
+/* sub-link */
+.sub-link {
+    display: none;
+    position: absolute;
+    background-color: var(--bgcolor);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    left: -10px;
+    top: 32px;
+
+}
+
+.department {
+    position: relative;
+}
+
+
+.sub-link li {
+    padding: 10px 0 10px 10px;
+}
+
+.department:hover .sub-link {
+    display: block;
+}
+
+.sub-link li::after {
+    content: "";
+    display: block;
+    width: 121px;
+    height: 2px;
+    background-color: #300c26c4;
+    left: 0;
+    position: absolute;
+}
+
+
+.searchbar {
+    margin-left: 5px;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    bottom: 5 0 0 5;
+    overflow: hidden;
+    width: max-content;
+    background-color: white;
+    position: relative;
+    border: 2px solid var(--color);
+}
+
+label {
+    border: none;
+    cursor: pointer;
+    background: white;
+    position: relative;
+    top: -1px;
+    left: -5px;
+    color: var(--color);
+}
+
+
+
+
+input {
+    height: 30px;
+    padding-left: 15px;
+    padding-bottom: 3px;
+    border: none;
+    width: 300px;
+    outline: none;
+    color: var(--color);
+    background-color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+
+
+
+    
+h1{
+ font-family: monospace;   
+ color:black;
+ font-size: 28px;
+ position: relative;
+ top: 100px;
+ font-family: monospace;
+}
+.women{
+    font-family: monospace;   
+ color:blueviolet;
+ font-size: 28px;
+ position:relative;
+ top:70px;
+
+}
+.search{
+    font-family: monospace;   
+ color: black;
+ font-size: 28px;
+ position:relative;
+ top: 140px;
+
+}
+.dress img{
+    display:block;
+float:right;
+margin-top:100px;
+margin-right: 250px;
+border-width:40px;
+box-shadow: 0 0 20px blueviolet;
+
+}
+
+.pantalon img{
+    display:block;
+float:right;
+margin-top:100px;
+margin-right:120px;
+box-shadow: 0 0 20px blueviolet;
+
+}
+.sports img{
+    display:block;
+    float:right;
+    margin-top:100px;
+margin-right:230px;
+border-width:40px;
+box-shadow: 0 0 20px blueviolet;
+
+}
+.ppp img{
+
+    display:block;
+    float:right;
+    margin-top:100px;
+margin-right:160px;
+border-width:40px;
+box-shadow: 0 0 20px blueviolet;
+
+}
+.shirts img{
+
+    display:block;
+    float:right;
+    margin-top:100px;
+margin-right:200px;
+box-shadow: 0 0 20px blueviolet;
+}
+
+.blousa img{
+    display:block;
+    float:right;
+    margin-top:100px;
+margin-right:200px;
+box-shadow: 0 0 20px blueviolet;
+}
+.swim img{
+    display:block;
+float:right;
+margin-top:100px;
+margin-bottom: 80px;
+margin-right:200px;
+border-width:40px;
+box-shadow: 0 0 20px blueviolet;
+
+}
+.bacis img{
+    display:block;
+float:right;
+margin-top:100px;
+margin-bottom: 80px;
+margin-right:170px;
+border-width:40px;
+box-shadow: 0 0 20px blueviolet;
+}
+.dress img:hover{
+    transform:scale(1.1);
+z-index: 2;
+transition-duration: 0.5s;
+transition-delay: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+.swim img:hover{
+    transform:scale(1.1);
+z-index: 2;
+transition-duration: 0.5s;
+transition-delay: 0.2s;
+transition-timing-function: ease-in-out;
+}
+.blousa img:hover{
+    transform:scale(1.1);
+z-index: 2;
+transition-duration: 0.5s;
+transition-delay: 0.2s;
+transition-timing-function: ease-in-out;
+}
+.shirts img:hover{
+    transform:scale(1.1);
+z-index: 2;
+transition-duration: 0.5s;
+transition-delay: 0.2s;
+transition-timing-function: ease-in-out;
+}
+.ppp img:hover{
+    transform:scale(1.1);
+z-index: 2;
+transition-duration: 0.5s;
+transition-delay: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+.sports img:hover{
+    transform:scale(1.1);
+z-index: 2;
+transition-duration: 0.5s;
+transition-delay: 0.2s;
+transition-timing-function: ease-in-out;
+}
+.pantalon img:hover{
+    transform:scale(1.1);
+z-index: 2;
+transition-duration: 0.5s;
+transition-delay: 0.2s;
+transition-timing-function: ease-in-out;
+}
+.bacis img:hover{
+    transform:scale(1.1);
+z-index: 2;
+transition-duration: 0.5s;
+transition-delay: 0.2s;
+transition-timing-function: ease-in-out;
+}
+
+
+body{
+    background-color: white;
+}  
+.dress1{
+ float:right;
+ position:absolute;
+ top:690px;   
+ left:800px;
+ color:blueviolet;
+ text-decoration: none;
+}
+.pants{
+    float:right;
+ position:absolute;
+ top:690px;   
+ left:290px;
+ color:blueviolet;
+ text-decoration: none;
+ 
+}
+.preganant{
+    float:right;
+ position:absolute;
+ top:1180px;   
+ left:220px;
+ color:blueviolet;
+ text-decoration: none;
+}
+.sports-clothes{
+ float:right;
+ position:absolute;
+ top:1180px;   
+ left:780px;
+ color:blueviolet;
+ text-decoration: none;
+}
+.out-shirts{
+ float:right;
+ position:absolute;
+ top:1690px;   
+ left:840px;
+ color:blueviolet;
+ text-decoration: none;
+}
+.blousa1{
+    float:right;
+ position:absolute;
+ top:1690px;   
+ left:240px;
+ color:blueviolet;
+ text-decoration: none;
+}
+.swimwear{
+ float:right;
+ position:absolute;
+ top:2170px;   
+ left:850px;
+ color:blueviolet;
+ text-decoration: none;
+}
+
+.full-set{
+    float:right;
+ position:absolute;
+ top:2170px;   
+ left:300px;
+ color:blueviolet;
+text-decoration: none;
+}

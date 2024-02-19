@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+
+      <div class="logo"><a href="#home"><img src="images/logo.png" alt="fff"></a>
+      </div>
+      <ul class=" Link">
+
+        <li><a href="#">Home</a></li>
+        <!-- start sub -->
+        <li class="department">
+
+          <a href="#">Department</a>
+          <ul class="sub-link">
+
+            <li> <a href="men-home.html">Men </a> </li>
+            <br>
+            <li> <a href="women-department.html">Women </a> </li>
+            <br>
+            <li><a href="children.html">Children </a> </li>
+
+          </ul>
+        </li>
+        <!-- end sub -->
+
+        <li><a href="#">About</a></li>
+
+        <li><a href="#">Contact.us</a></li>
+
+      </ul>
+      <!-- start search -->
+
+      <div class="searchbar"> <input type="search" name="" placeholder="search here" id="s">
+        <div><label for="s" class="fa fa-search icon-search"></label>
+        </div>
+      </div>
+
+      <!-- end search -->
+
+      <ul class="log">
+        <li><a href="HandsOn.html">logout</a></li>
+      </ul>
+
+    </nav>
+  </header>
+  <div class="logo-for-body">
+    <img src="images/logo-removebg-preview.png">
+  </div>
+
+  <div class="arrwo-text">
+    <h3>fashonable clothes</h3><br>
+    <h3>for modern life</h3>
+  </div>
+  <div class="container">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <a href="women.html" class="firstmain"> <img src="images/women1.webp" alt=""></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="#" class="secoundmain"><img src="images/men1.webp" alt=""></a>
+        </div>
+        <div class="swiper-slide">
+          <a href="index.html" class="thirdmain"><img src="images/children1.webp" alt=""> </a>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+  <div class="social">
+    <i class="fa-brands fa-square-facebook"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-twitter"></i>
+    <div class="rotat-words">
+      <p>FAY IS :</p>
+      <div class="the-word">
+        <span>Stylish</span>
+        <span>Trendy</span>
+        <span>Minimalistic</span>
+        <span>Freestyle</span>
+        <span>Colorful</span>
+      </div>
+    </div>
+  </div>
+  <!--footer-->
+  <footer>
+    <div class="features">
+      <div class="icons">
+        <div class="home">
+          <b>click&collect</b> <br /> <b>free cargo</b>
+          <img src="images/cargo.png" alt="">
+        </div>
+        <div class="cash">
+          <b>cash on delivrey</b><br /><b>service free 1% of your purchase</b>
+          <img src="images/cash.png" alt="">
+        </div>
+        <div class="product">
+          <b> Product Replacement at Store</b><br><b> Buy online, change in store</b>
+          <img src="images/shop.png" alt="">
+        </div>
+        <div class="return">
+          <b>Easy & Free Return via Aramex</b><br> <b>Return Within 30 Days</b>
+          <img src="images/return.png" alt="">
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- the script for slider bar  -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+
+</html>

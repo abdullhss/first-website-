@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:ital@1&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --color: rgb(181, 111, 247);
+  --bgcolor: rgb(0, 0, 0);
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  text-decoration: none;
+
+}
+
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  scroll-behavior: smooth;
+
+} */
+
+header {
+  height: 80px;
+  width: 100%;
+}
+
+
+header nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+
+}
+
+body {
+  background-color: rgb(200, 150, 150, 80%);
+  height: 150px;
+}
+
+.logo img {
+  cursor: pointer;
+  width: 80px;
+  /* height: 100px; */
+  max-height: 80px;
+}
+
+.Link {
+  padding: 15px 0;
+
+}
+
+.Link li,
+.log li {
+
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.Link li a {
+  padding: 20px 0;
+  transition: 0.4s;
+  color: white;
+}
+
+.Link li a:hover {
+  color: rgb(181, 111, 247);
+}
+
+.log li a {
+  text-decoration: none;
+  border: 1px solid rgb(181, 111, 247);
+  color: white;
+  background-color: rgb(181, 111, 247);
+  padding: 5px 20px;
+  border-radius: 40px;
+}
+
+.log li a:hover {
+  background-color: transparent;
+  border: 1px solid rgb(181, 111, 247);
+  transition: .5s;
+}
+
+/* sub-link */
+.sub-link {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  padding-left: 25px;
+  border-radius: 5px;
+  font-size: 15px;
+  top: 32px;
+  z-index: 1;
+}
+
+.department {
+  position: relative;
+}
+
+.sub-link li {
+  padding: 10px 0 10px 10px;
+}
+
+.department:hover .sub-link {
+  display: block;
+}
+
+.sub-link li::after {
+  content: "";
+  display: block;
+  width: 121px;
+  height: 2px;
+  background-color: rgb(211, 211, 211);
+  left: 0;
+  position: absolute;
+}
+
+.searchbar {
+  margin-left: 5px;
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+  bottom: 5 0 0 5;
+  overflow: hidden;
+  width: max-content;
+  background-color: white;
+  position: relative;
+  border: 2px solid rgb(181, 111, 247);
+}
+
+header .searchbar label {
+  cursor: pointer;
+  color: white;
+  height: 120%;
+}
+
+header .searchbar div {
+  display: inline;
+  margin-right: 20px;
+  background-color: rgb(181, 111, 247);
+  width: 50px;
+  height: 50px;
+  border: 15px solid rgb(181, 111, 247);
+  border-radius: 2px;
+}
+
+header .searchbar input {
+  height: 30px;
+  padding-left: 15px;
+  padding-bottom: 3px;
+  border: none;
+  width: 300px;
+  outline: none;
+  color: rgb(181, 111, 247);
+  background-color: white;
+  border-radius: 0px 5px 5px 0px;
+}
+
+label {
+  border: none;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0);
+  position: relative;
+  top: -1px;
+  left: -5px;
+  color: var(--color);
+}
+
+
+
+
+input {
+  height: 30px;
+  padding-left: 15px;
+  padding-bottom: 3px;
+  border: none;
+  width: 300px;
+  outline: none;
+  color: var(--color);
+  background-color: white;
+  border-radius: 0px 5px 5px 0px;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.cards {
+  background-color: #ffffffe3;
+}
+
+.title {
+  font-size: 2em;
+  font-weight: 700;
+  color: rgb(127, 27, 221);
+  text-shadow: 1px 1px rgba(30, 4, 54, 0.96);
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.pro-card {
+  border: 1px solid rgb(193, 149, 235);
+  min-height: 14em;
+  background-color: #fff;
+  width: 23em;
+  overflow: hidden;
+  margin: 15px;
+  border-radius: 15px;
+  transition: 0.6s ease;
+  box-shadow: 0 5px 25px rgba(71, 16, 122, 0.5);
+
+}
+
+.pro-card:hover {
+  transform: scale(1.1);
+
+}
+
+.pro-card:hover .pro-img {
+  opacity: 0.9;
+}
+
+.pro-img img {
+  width: 100%;
+}
+
+.pro-info {
+  margin: 15px;
+
+}
+
+.pro-title {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin-top: 10px;
+
+}
+
+.more-details {
+  text-decoration: none;
+  color: rgb(181, 111, 247);
+  transition: 0.6s ease;
+
+}
+
+.more-details:hover {
+  color: rgb(127, 27, 221);
+}

@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    color: black;
+    position: relative;
+    left: -445px;
+    margin: 15px;
+    padding: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: 'Cairo', sans-serif;
+}
+.body img{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+button{
+    border-bottom-right-radius: 5% 80%;
+    border-top-left-radius: 5% 80%;
+    color: white;
+    background-color: black;
+    margin: 10px auto;
+    text-transform: capitalize;
+    font-family: 'cairo';
+    font-weight: bold;
+    box-shadow: 5px 5px 15px 4px #e5e5e5;
+    position: relative;
+    top: -534px;
+   
+    left: 500px;
+    width: 286px;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+button:hover{
+    transform: scale(1.4,1.4);
+}
+
+ 

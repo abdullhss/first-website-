@@ -1,0 +1,11 @@
+ <nav>
+        &nbsp;
+         <a href ="#"> Home</a>
+         <a href ="#"> regesitration</a>
+         <a href ="#"> Login</a>
+         <a href ="#"> Department</a>
+         <a href ="#"> contact</a>
+         <a href ="#"> about</a>
+         <a href ="#"> Services</a>
+    </nav>
+    <hr>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" href="">
+        <meta name="Description" content="amal farid">
+        <title> Department Pants</title>
+        <style>
+              :root {
+    --color: rgb(181, 111, 247);
+    --bgcolor: rgb(0, 0, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    color: rgb(250, 50, 250);
+}
+
+header {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+header::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: rgb(181, 111, 247);
+  left: 0;
+  position: absolute;
+}
+
+header nav {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+
+}
+
+body {
+  background-color: rgb(200, 150, 150, 80%);
+  height: 150px;
+}
+
+.logo img {
+  cursor: pointer;
+  width: 80px;
+  /* height: 100px; */
+  max-height: 80px;
+}
+
+.Link {
+  padding: 15px 0;
+
+}
+
+.Link li,
+.log li {
+
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.Link li a {
+  padding: 20px 0;
+  transition: 0.4s;
+  color: white;
+}
+
+.Link li a:hover {
+  color: rgb(181, 111, 247);
+}
+
+.log li a {
+  text-decoration: none;
+  border: 1px solid rgb(181, 111, 247);
+  color: white;
+  background-color: rgb(181, 111, 247);
+  padding: 5px 20px;
+  border-radius: 40px;
+}
+
+.log li a:hover {
+  background-color: transparent;
+  border: 1px solid rgb(181, 111, 247);
+  transition: .5s;
+}
+
+/* sub-link */
+.sub-link {
+  display: none;
+  position: absolute;
+  background-color: rgb(0, 0, 0);
+  padding-left: 25px;
+  border-radius: 5px;
+  font-size: 15px;
+  top: 32px;
+  z-index: 1;
+}
+
+.department {
+  position: relative;
+}
+
+.sub-link li {
+  padding: 10px 0 10px 10px;
+}
+
+.department:hover .sub-link {
+  display: block;
+}
+
+.sub-link li::after {
+  content: "";
+  display: block;
+  width: 121px;
+  height: 2px;
+  background-color: rgb(211, 211, 211);
+  left: 0;
+  position: absolute;
+}
+.searchbar {
+  margin-left: 5px;
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+  bottom: 5 0 0 5;
+  overflow: hidden;
+  width: max-content;
+  background-color: white;
+  position: relative;
+  border: 2px solid rgb(181, 111, 247);
+}
+
+header .searchbar label {
+  cursor: pointer;
+  color: white;
+  height: 120%;
+}
+
+header .searchbar div {
+  display: inline;
+  margin-right: 20px;
+  background-color: rgb(181, 111, 247);
+  width: 50px;
+  height: 50px;
+  border: 15px solid rgb(181, 111, 247);
+  border-radius: 2px;
+}
+
+header .searchbar input {
+  height: 30px;
+  padding-left: 15px;
+  padding-bottom: 3px;
+  border: none;
+  width: 300px;
+  outline: none;
+  color: rgb(181, 111, 247);
+  background-color: white;
+  border-radius: 0px 5px 5px 0px;
+}
+
+
+input {
+    height: 30px;
+    padding-left: 15px;
+    padding-bottom: 3px;
+    border: none;
+    width: 300px;
+    outline: none;
+    color: var(--color);
+    background-color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+            .women{
+    font-family: monospace;   
+ color:blueviolet;
+ font-size: 28px;
+ position:relative;
+ top: 70px;
+ right:80px;
+
+}
+ul li{
+display:inline-block; 
+margin-top:150px;
+margin-left:60px;
+margin-bottom: 20px;
+
+}
+ul li img:hover{
+    transform:scale(1.1);
+z-index: 2;
+transition-duration: 0.5s;
+transition-delay: 0.2s;
+transition-timing-function: ease-in-out;
+
+}
+.run{
+float: right;  
+font-size: 20px;
+margin-top: -30px;
+margin-bottom: 3px;
+margin-right: 5px;
+
+}
+</style>
+<body>
+  <header>
+    <nav>
+
+      <div class="logo"><a href="index.html"><img src="images/logo.png" alt="fff"></a>
+      </div>
+      <ul class=" Link">
+
+        <li><a href="index.html">Home</a></li>
+        <!-- start sub -->
+        <li class="department">
+
+          <a href="#">Department</a>
+          <ul class="sub-link">
+
+            <li> <a href="men-home.html">Men </a> </li>
+            <br>
+            <li> <a href="women-department.html">Women </a> </li>
+            <br>
+            <li><a href="children.html">Children </a> </li>
+
+          </ul>
+        </li>
+        <!-- end sub -->
+
+        <li><a href="#">About</a></li>
+
+        <li><a href="#">Contact.us</a></li>
+
+      </ul>
+      <!-- start search -->
+
+      <div class="searchbar"> <input type="search" name="" placeholder="search here" id="s">
+        <div><label for="s" class="fa fa-search icon-search"></label>
+        </div>
+      </div>
+
+      <!-- end search -->
+
+      <ul class="log">
+        <li><a href="#">logout</a></li>
+      </ul>
+
+    </nav>
+  </header>
+      
+<h2 class="women"><center><i>Pants</i></center></h2>
+<ul>
+ <li>
+    <img src="download (4).jpeg" width="350px" height="350px" >
+    <h2><i>
+     price: 250ج.م   
+    </i>
+    <form>
+        <button class="run" type="button" > Add to cart</button>
+  
+    </form>
+</h2>
+ </li>  
+ <li>
+    <img src="download (5).jpeg" width="350px" height="350px"> 
+    <h2><i>
+        price: 1050ج.م   
+       </i>
+       <form>
+        <button class="run" type="button" > Add to cart</button>
+  
+    </form>
+    </h2>
+ </li> 
+ <li>
+    <img src="download (3).jpeg" width="350px" height="350px">  
+    <h2><i>
+        price: 300ج.م   
+       </i>
+       <form>
+        <button class="run" type="button" > Add to cart</button>
+  
+    </form>
+    </h2>
+ </li>
+ <li>
+    <img src="download (6).jpeg" width="350px" height="350px">  
+    <h2><i>
+        price: 1000ج.م   
+       </i>
+       <form>
+        <button class="run" type="button" > Add to cart</button>
+  
+    </form>
+    </h2> 
+ </li>
+ <li>
+    <img src="images (5).jpeg" width="350px" height="350px">
+    <h2><i>
+        price: 1050ج.م   
+       </i>
+       <form>
+        <button class="run" type="button" > Add to cart</button>
+  
+    </form>
+    </h2> 
+ </li>
+ <li>
+    <img src="صور-اشكال-جينز-حريمي-3.jpg" width="350px" height="350px">
+    <h2><i>
+        price: 650ج.م   
+       </i>
+       <form>
+        <button class="run" type="button" > Add to cart</button>
+  
+    </form>
+    </h2> 
+ </li>
+</ul>
+</body>
+
+
+</html>
